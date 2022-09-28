@@ -1,4 +1,5 @@
-const conversions = [
+function convertToRoman(num) {
+ const conversions = [
   [1000, "M"],
   [900, "CM"],
   [500, "D"],
@@ -14,7 +15,6 @@ const conversions = [
   [1, "I"]
 ]
 
-function convertToRoman(num) {
  let countDown = num;
  let romanStr = "";
  for (let i = 0; i < conversions.length; i++) {
